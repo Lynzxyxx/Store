@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 250 250 252;
+  --fg: 17 17 24;
+  --card: 255 255 255;
+  --border: 228 228 235;
+}
+
+.dark {
+  --bg: 12 12 16;
+  --fg: 240 240 245;
+  --card: 22 22 29;
+  --border: 40 40 50;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(var(--bg));
+  color: rgb(var(--fg));
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.card {
+  background-color: rgb(var(--card));
+  border: 1px solid rgb(var(--border));
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(99 102 241 / 0.4);
+  border-radius: 999px;
+}
